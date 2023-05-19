@@ -1,0 +1,55 @@
+.homeContainer{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    background: url('http://www.cinemercedes.com/images/simple-dark-shapes-2560x1600-id.jpg');
+    
+    
+}
+
+.movies-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider{
+    left: 530px;
+    aspect-ratio: 10 / 16;
+    width: 220px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+}
+
+.slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+
+.best{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .slider{
+    position: relative;
+     left: 55px;
+    }
+   }
+
+   @media screen and (max-width: 328px) {
+    .slider{
+    position: relative;
+     left: 55px;
+    }
+   }
